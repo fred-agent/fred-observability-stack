@@ -38,8 +38,8 @@ import urllib.error
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 LANGFUSE_BASE_URL   = os.environ.get("LANGFUSE_BASE_URL",   "http://localhost:3001")
-LANGFUSE_PUBLIC_KEY = os.environ.get("LANGFUSE_PUBLIC_KEY", "pk-lf-1e33f02a-a91b-4b0b-9ef7-4661c6dea09d")
-LANGFUSE_SECRET_KEY = os.environ.get("LANGFUSE_SECRET_KEY", "sk-lf-10a4262e-2cc8-471c-ac2a-57f054d5e5f8")
+LANGFUSE_PUBLIC_KEY = os.environ.get("LANGFUSE_PUBLIC_KEY", "$LANGFUSE_PUBLIC_KEY")
+LANGFUSE_SECRET_KEY = os.environ.get("LANGFUSE_SECRET_KEY", "$LANGFUSE_SECRET_KEY")
 
 # Batch size for ingestion API (max 50 per Langfuse docs)
 BATCH_SIZE = 50
